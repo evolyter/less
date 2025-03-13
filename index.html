@@ -5,44 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет - Lisyen</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Подключение шрифта Open Sans Hebrew -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Hebrew:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header -->
     <header class="header">
-        <a href="#" class="logo">
-            <img src="images/logo.svg" alt="Логотип" class="logo-icon">
+        <a href="#" class="header__logo">
+            <img src="images/logo.svg" alt="Логотип" class="header__logo-icon">
         </a>
-        <a href="#" class="logout-btn">Выход</a>
+        <a href="#" class="header__logout-btn">Выход</a>
     </header>
-
-    <!-- Main Content -->
     <main>
-        <section class="profile-card">
-            <div class="profile-photo-section">
-                <div class="avatar-placeholder"></div>
-                <button class="btn upload-btn">Загрузить фото</button>
-                <button class="btn delete-btn">Удалить</button>
+        <section class="personal-account">
+            <div class="personal-account__photo">
+                <div class="personal-account__avatar"></div>
+                <button class="button personal-account__upload-btn">Загрузить фото</button>
+                <button class="button personal-account__delete-btn">Удалить</button>
             </div>
 
-            <div class="profile-form-section">
-                <h2>Личный кабинет</h2>
-                <form>
-                    <div class="input-row">
-                        <input type="text" placeholder="ФИО" required>
-                        <input type="email" placeholder="Email" required>
+            <div class="profile-form">
+                <h2 class="profile-form__title">Личный кабинет</h2>
+                <form class="profile-form__form">
+                    <div class="profile-form__input-row">
+                        <input type="text" class="profile-form__input" placeholder="ФИО" required>
+                        <input type="email" class="profile-form__input" placeholder="Email" required>
                     </div>
-                    <div class="input-row">
-                        <input type="tel" placeholder="Номер телефона" required>
-                        <input type="password" placeholder="Пароль" required>
+                    <div class="profile-form__input-row">
+                        <input type="tel" class="profile-form__input" placeholder="Номер телефона" required>
+                        <input type="password" class="profile-form__input" placeholder="Пароль" required>
                     </div>
-                    <button type="submit" class="btn save-btn">Сохранить изменения</button>
+                    <button type="submit" class="button profile-form__save-btn">Сохранить изменения</button>
                 </form>
             </div>
         </section>
     </main>
-
 </body>
 </html>
